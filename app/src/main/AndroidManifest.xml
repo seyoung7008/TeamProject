@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".OneActivity"></activity>
+        <activity android:name=".TwoActivity"></activity>
+        <activity android:name=".ThreeActivity"></activity>
+        <activity android:name=".FourActivity"></activity>
+
     </application>
 
 </manifest>

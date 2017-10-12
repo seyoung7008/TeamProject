@@ -1,15 +1,19 @@
 package com.example.sy.teamproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class OneActivity extends AppCompatActivity {
+/**
+ * Created by SY on 2017-10-13.
+ */
+
+public class TwoActivity extends AppCompatActivity {
     static MyAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +22,11 @@ public class OneActivity extends AppCompatActivity {
 
         // 데이터 원본 준비
         ArrayList<MyItem> data = new ArrayList<MyItem>();
-        data.add(new MyItem(R.drawable.image11, "엽기떡볶이", "14000원"));
-        data.add(new MyItem(R.drawable.image12, "국물닭발", "15000원"));
-        data.add(new MyItem(R.drawable.image13, "오돌뼈", "14000원"));
-        data.add(new MyItem(R.drawable.image14, "주먹김밥", "2000원 "));
-        data.add(new MyItem(R.drawable.image15, "계란찜", "2000원"));
+        data.add(new MyItem(R.drawable.image21, "매운떡볶이", "1인분 3000원 "));
+        data.add(new MyItem(R.drawable.image22, "치즈떡볶이", "1인분 4500원"));
+        data.add(new MyItem(R.drawable.image23, "수제튀김", "5개 3000원"));
+        data.add(new MyItem(R.drawable.image24, "진짜찰순대", "3500원 "));
+        data.add(new MyItem(R.drawable.image25, "수제/부산어묵", "3개 2000원"));
 
         adapter = new MyAdapter(this, R.layout.item, data);
 

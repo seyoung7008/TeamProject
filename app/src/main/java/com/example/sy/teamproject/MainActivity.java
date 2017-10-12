@@ -14,6 +14,10 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
  static MyAdapter adapter;
+    static String onemenu = "엽기떡볶이";
+    static String twomenu = "죠스떡볶이";
+    static String threemenu = "신전떡볶이";
+    static String fourmenu = "오빠네떡볶이";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +40,24 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View vClicked,
                                     int position, long id) {
                 String name = ((MyItem)adapter.getItem(position)).nName;
-                Toast.makeText(MainActivity.this, name + " selected",
-                        Toast.LENGTH_SHORT).show();
+                if(onemenu == name){
+                    Intent intent = new Intent(getApplicationContext(), OneActivity.class);
+                    startActivity(intent);
+                }
+                else if(twomenu == name){
+                    Intent intent = new Intent(getApplicationContext(), TwoActivity.class);
+                    startActivity(intent);
+                }
+                else if (threemenu == name){
+                    Intent intent = new Intent(getApplicationContext(), ThreeActivity.class);
+                    startActivity(intent);
+                }
 
-                    //Intent intent = new Intent(getApplicationContext(), ㅜActivity.class);
-                  //  startActivity(intent);
+                else{
+                    Intent intent = new Intent(getApplicationContext(), FourActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });
