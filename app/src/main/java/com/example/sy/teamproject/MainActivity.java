@@ -1,5 +1,6 @@
 package com.example.sy.teamproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,13 +35,15 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View vClicked,
                                     int position, long id) {
-                //   String name = (String) ((TextView)vClicked.findViewById(R.id.textItem1)).getText();
                 String name = ((MyItem)adapter.getItem(position)).nName;
                 Toast.makeText(MainActivity.this, name + " selected",
                         Toast.LENGTH_SHORT).show();
+
+                    //Intent intent = new Intent(getApplicationContext(), ㅜActivity.class);
+                  //  startActivity(intent);
+
             }
         });
-
 
     }
 }
