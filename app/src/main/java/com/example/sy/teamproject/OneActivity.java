@@ -11,6 +11,11 @@ import java.util.ArrayList;
 
 public class OneActivity extends AppCompatActivity {
     static MyAdapter adapter;
+    static String onemenu = "엽기떡볶이";
+    static String twomenu = "국물닭발";
+    static String threemenu = "오돌뼈";
+    static String fourmenu = "주먹김밥";
+    static String fivemenu = "계란찜";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +31,7 @@ public class OneActivity extends AppCompatActivity {
 
         adapter = new MyAdapter(this, R.layout.item, data);
 
+
         //어댑터 연결
         ListView listView = (ListView)findViewById(R.id.listView);
         listView.setAdapter(adapter);
@@ -33,12 +39,29 @@ public class OneActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View vClicked,
                                     int position, long id) {
+                String name = ((MyItem)adapter.getItem(position)).nName;
+                if(onemenu == name){
+                    Intent intent = new Intent(getApplicationContext(), oneByoneActivity.class);
+                    startActivity(intent);
+                }
+                else if(twomenu == name){
+                    Intent intent = new Intent(getApplicationContext(), TwoActivity.class);
+                    startActivity(intent);
+                }
+                else if (threemenu == name){
+                    Intent intent = new Intent(getApplicationContext(), ThreeActivity.class);
+                    startActivity(intent);
+                }
 
-                Intent intent = new Intent(getApplicationContext(), OneActivity.class);
-                startActivity(intent);
+                else{
+                    Intent intent = new Intent(getApplicationContext(), FourActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });
 
     }
-}
+    }
+
