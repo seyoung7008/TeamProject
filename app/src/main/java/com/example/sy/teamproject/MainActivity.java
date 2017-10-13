@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         data.add(new MyItem(R.drawable.image1, "엽기떡볶이", "031-979-8592"));
         data.add(new MyItem(R.drawable.image2, "죠스떡볶이", "031-973-1033"));
         data.add(new MyItem(R.drawable.image3, "신전떡볶이", "031-967-2600"));
-        data.add(new MyItem(R.drawable.image3, "오빠네떡볶이", "031-908-7749"));
+        data.add(new MyItem(R.drawable.image4, "오빠네떡볶이", "031-908-7749"));
 
        adapter = new MyAdapter(this, R.layout.item, data);
 
