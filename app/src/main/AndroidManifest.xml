@@ -29,7 +29,11 @@
         <activity android:name=".twoBytwoActivity" />
         <activity android:name=".twoBythreeActivity" />
         <activity android:name=".twoByfourActivity" />
-        <activity android:name=".twoByfiveActivity"></activity>
+        <activity android:name=".twoByfiveActivity" />
+        <activity android:name=".threeByoneActivity" />
+        <activity android:name=".threeBytwoActivity" />
+        <activity android:name=".threeBythreeActivity" />
+        <activity android:name=".threeByfourActivity"></activity>
     </application>
 
 </manifest>
