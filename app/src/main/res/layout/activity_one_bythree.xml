@@ -10,7 +10,7 @@
         android:layout_width="261dp"
         android:layout_height="80dp"
         android:layout_gravity="center"
-        android:src="@drawable/image11"
+        android:src="@drawable/image13"
         android:layout_weight="0.97" />
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:gravity="center_horizontal"
-        android:text="@string/menu1"
+        android:text="@string/menu3"
 
         android:textSize="18sp" />
 

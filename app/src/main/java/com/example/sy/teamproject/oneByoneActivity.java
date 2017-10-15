@@ -15,10 +15,7 @@ import java.util.ArrayList;
 
 public class oneByoneActivity extends AppCompatActivity{
     static MyAdapter adapter;
-    static String onemenu = "엽기떡볶이";
-    static String twomenu = "죠스떡볶이";
-    static String threemenu = "신전떡볶이";
-    static String fourmenu = "오빠네떡볶이";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

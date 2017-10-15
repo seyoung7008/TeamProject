@@ -16,12 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OneActivity"></activity>
-        <activity android:name=".oneByoneActivity"></activity>
-        <activity android:name=".TwoActivity"></activity>
-        <activity android:name=".ThreeActivity"></activity>
-        <activity android:name=".FourActivity"></activity>
-
+        <activity android:name=".OneActivity" />
+        <activity android:name=".oneByoneActivity" />
+        <activity android:name=".TwoActivity" />
+        <activity android:name=".ThreeActivity" />
+        <activity android:name=".FourActivity" />
+        <activity android:name=".oneBytwoActivity" />
+        <activity android:name=".oneBythreeActivity" />
+        <activity android:name=".oneByfourActivity" />
+        <activity android:name=".oneByfiveActivity"></activity>
     </application>
 
 </manifest>

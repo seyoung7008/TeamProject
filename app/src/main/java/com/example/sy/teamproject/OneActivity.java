@@ -11,11 +11,11 @@ import java.util.ArrayList;
 
 public class OneActivity extends AppCompatActivity {
     static MyAdapter adapter;
-    static String onemenu = "엽기떡볶이";
-    static String twomenu = "국물닭발";
-    static String threemenu = "오돌뼈";
-    static String fourmenu = "주먹김밥";
-    static String fivemenu = "계란찜";
+    static String menu1= "엽기떡볶이";
+    static String menu2 = "국물닭발";
+    static String menu3 = "오돌뼈";
+    static String menu4 = "주먹김밥";
+    static String menu5 = "계란찜";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,21 +40,25 @@ public class OneActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View vClicked,
                                     int position, long id) {
                 String name = ((MyItem)adapter.getItem(position)).nName;
-                if(onemenu == name){
+                if(menu1 == name){
                     Intent intent = new Intent(getApplicationContext(), oneByoneActivity.class);
                     startActivity(intent);
                 }
-                else if(twomenu == name){
-                    Intent intent = new Intent(getApplicationContext(), TwoActivity.class);
+                else if(menu2 == name){
+                    Intent intent = new Intent(getApplicationContext(), oneBytwoActivity.class);
                     startActivity(intent);
                 }
-                else if (threemenu == name){
-                    Intent intent = new Intent(getApplicationContext(), ThreeActivity.class);
+                else if (menu3 == name){
+                    Intent intent = new Intent(getApplicationContext(), oneBythreeActivity.class);
                     startActivity(intent);
                 }
 
-                else{
-                    Intent intent = new Intent(getApplicationContext(), FourActivity.class);
+                else if(menu4==name){
+                    Intent intent = new Intent(getApplicationContext(), oneByfourActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Intent intent = new Intent(getApplicationContext(), oneByfiveActivity.class);
                     startActivity(intent);
                 }
 

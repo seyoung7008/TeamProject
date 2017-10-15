@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">TeamProject</string>
+    <string name="menu1"><b>엽기떡볶이: 14000원</b> \n 눈물나게 맵지만 결코 잊을 수 없는 맛의 엽기떡볶이. \n
+    *매운맛조절가능 (매운맛, 오리지널, 덜매운맛, 착한맛)</string>
+    <string name="menu2"><b>국물닭발: 15000원</b> \n 야채들과 당면이 어우러져 매콤한 국물과 함께 닭발을 즐길 수 있어요~</string>
+    <string name="menu3"><b>오돌뼈: 14000원</b> \n 돼지고기 중 연골부위 만을 직접 손실하여 오도독 씹히는 맛을 느낄 수 있는 메뉴!</string>
+    <string name="menu4"><b>주먹김밥: 2000원</b> \n 매운 맛을 중화 시키기엔 안성맞춤인 메뉴 \n *밥과 김이 별도로 제공됩니다.</string>
+    <string name="menu5"><b>계란찜: 2000원</b> \n 매운 엽기떡볶이로 속에 불나기 전에 계란찜 대비~</string>
+
+
+
+
+
+
 </resources>
