@@ -15,6 +15,11 @@ import java.util.ArrayList;
 
 public class TwoActivity extends AppCompatActivity {
     static MyAdapter adapter;
+    static String menu21= "매운떡볶이";
+    static String menu22 = "치즈떡볶이";
+    static String menu23 = "수제튀김";
+    static String menu24 = "진짜찰순대";
+    static String menu25 = "수제/부산어묵";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +43,29 @@ public class TwoActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View vClicked,
                                     int position, long id) {
 
-                Intent intent = new Intent(getApplicationContext(), OneActivity.class);
-                startActivity(intent);
+                String name = ((MyItem)adapter.getItem(position)).nName;
+                if(menu21 == name){
+                    Intent intent = new Intent(getApplicationContext(), twoByoneActivity.class);
+                    startActivity(intent);
+                }
+                else if(menu22 == name){
+                    Intent intent = new Intent(getApplicationContext(), twoBytwoActivity.class);
+                    startActivity(intent);
+                }
+                else if (menu23 == name){
+                    Intent intent = new Intent(getApplicationContext(), twoBythreeActivity.class);
+                    startActivity(intent);
+                }
+
+                else if(menu24==name){
+                    Intent intent = new Intent(getApplicationContext(), twoByfourActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Intent intent = new Intent(getApplicationContext(), twoByfiveActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });

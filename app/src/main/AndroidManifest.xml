@@ -24,7 +24,12 @@
         <activity android:name=".oneBytwoActivity" />
         <activity android:name=".oneBythreeActivity" />
         <activity android:name=".oneByfourActivity" />
-        <activity android:name=".oneByfiveActivity"></activity>
+        <activity android:name=".oneByfiveActivity" />
+        <activity android:name=".twoByoneActivity" />
+        <activity android:name=".twoBytwoActivity" />
+        <activity android:name=".twoBythreeActivity" />
+        <activity android:name=".twoByfourActivity" />
+        <activity android:name=".twoByfiveActivity"></activity>
     </application>
 
 </manifest>
