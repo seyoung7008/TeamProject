@@ -33,7 +33,11 @@
         <activity android:name=".threeByoneActivity" />
         <activity android:name=".threeBytwoActivity" />
         <activity android:name=".threeBythreeActivity" />
-        <activity android:name=".threeByfourActivity"></activity>
+        <activity android:name=".threeByfourActivity" />
+        <activity android:name=".fourByoneActivity" />
+        <activity android:name=".fourBytwoActivity" />
+        <activity android:name=".fourBythreeActivity" />
+        <activity android:name=".fourByfourActivity"></activity>
     </application>
 
 </manifest>

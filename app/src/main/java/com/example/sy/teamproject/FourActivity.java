@@ -15,6 +15,10 @@ import java.util.ArrayList;
 
 public class FourActivity extends AppCompatActivity {
     static MyAdapter adapter;
+    static String menu41= "떡볶이(소)";
+    static String menu42 = "떡볶이(중)";
+    static String menu43 = "모듬튀김";
+    static String menu44 = "사이드메뉴";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +26,8 @@ public class FourActivity extends AppCompatActivity {
 
         // 데이터 원본 준비
         ArrayList<MyItem> data = new ArrayList<MyItem>();
-        data.add(new MyItem(R.drawable.image41, "떡볶이", "2인분 8000원 "));
-        data.add(new MyItem(R.drawable.image44, "떡볶이", "3~4인분 14000원"));
+        data.add(new MyItem(R.drawable.image41, "떡볶이(소)", "2인분 8000원 "));
+        data.add(new MyItem(R.drawable.image44, "떡볶이(중)", "3~4인분 14000원"));
         data.add(new MyItem(R.drawable.image42, "모듬튀김", "4000원"));
         data.add(new MyItem(R.drawable.image43, "사이드메뉴", "1000원~3000원 "));
 
@@ -38,11 +42,27 @@ public class FourActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View vClicked,
                                     int position, long id) {
 
-                Intent intent = new Intent(getApplicationContext(), OneActivity.class);
-                startActivity(intent);
+                String name = ((MyItem)adapter.getItem(position)).nName;
+                if(menu41 == name){
+                    Intent intent = new Intent(getApplicationContext(), fourByoneActivity.class);
+                    startActivity(intent);
+                }
+                else if(menu42 == name){
+                    Intent intent = new Intent(getApplicationContext(), fourBytwoActivity.class);
+                    startActivity(intent);
+                }
+                else if (menu43 == name){
+                    Intent intent = new Intent(getApplicationContext(), fourBythreeActivity.class);
+                    startActivity(intent);
+                }
+
+                else {
+                    Intent intent = new Intent(getApplicationContext(), fourByfourActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });
-
     }
 }
