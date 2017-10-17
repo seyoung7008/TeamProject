@@ -38,6 +38,22 @@
         <activity android:name=".fourBytwoActivity" />
         <activity android:name=".fourBythreeActivity" />
         <activity android:name=".fourByfourActivity"></activity>
+
+        <activity android:name=".OneActivity"
+
+            android:label="Second Activity">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

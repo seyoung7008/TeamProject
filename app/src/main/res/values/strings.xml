@@ -20,4 +20,7 @@
     <string name="menu43"><b>모듬튀김: 4000원</b> \n 오뎅3, 김말이2, 쫀득만두2, 잡채말이2, 고추튀김1</string>
     <string name="menu44"><b>사이드메뉴: 1000원~3000원</b> \n 치즈/참치/매콤참치주먹밥/참치마요주먹밥/순대 3000원 \n
     계란찜/주먹밥/야끼만두/넓적당면/우동 2000원 \n 비엔나/계란/메추리알/떡/오뎅/감자옹심이 1000원</string>
+    <string name="name"><b>엽기떡볶이</b></string>
+    <string name="address">서울 종로구 대학로 8가길 30 11am-24pm</string>
+    <string name="call">031-979-8592</string>
 </resources>
