@@ -32,21 +32,21 @@ public class OneActivity extends AppCompatActivity {
         data.add(new MyItem(R.drawable.image15, "계란찜", "2000원"));
 
         adapter = new MyAdapter(this, R.layout.item, data);
-        Button btn = (Button)findViewById(R.id.buttonDialActivity);
+      //  Button btn = (Button)findViewById(R.id.buttonDialActivity);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+     //   btn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
 
-            public void onClick(View view) {
 
-                Intent implicit_intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:114"));
+           // public void onClick(View view) {
 
-                startActivity(implicit_intent);
+         // Intent implicit_intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:114"));
 
-            }
+               //startActivity(implicit_intent);
 
-        });
+        //    }
+
+      //  });
 
         //어댑터 연결
         ListView listView = (ListView)findViewById(R.id.listView);

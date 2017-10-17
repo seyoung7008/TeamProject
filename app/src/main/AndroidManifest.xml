@@ -18,18 +18,18 @@
         </activity>
 
         <activity android:name=".oneByoneActivity"
-            android:parentActivityName=".OneActivity"/>
+            />
         <activity android:name=".TwoActivity" />
         <activity android:name=".ThreeActivity" />
         <activity android:name=".FourActivity" />
         <activity android:name=".oneBytwoActivity"
-            android:parentActivityName=".OneActivity"/>
+            />
         <activity android:name=".oneBythreeActivity"
-            android:parentActivityName=".OneActivity"/>
+            />
         <activity android:name=".oneByfourActivity"
-            android:parentActivityName=".OneActivity"/>
+            />
         <activity android:name=".oneByfiveActivity"
-            android:parentActivityName=".OneActivity"/>
+            />
         <activity android:name=".twoByoneActivity" />
         <activity android:name=".twoBytwoActivity" />
         <activity android:name=".twoBythreeActivity" />
@@ -45,20 +45,10 @@
         <activity android:name=".fourByfourActivity"></activity>
 
         <activity android:name=".OneActivity"
-
-            android:label="Second Activity">
-
-            <intent-filter>
-
-                <action android:name="android.intent.action.DIAL" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="tel" />
-
-            </intent-filter>
+            >
 
         </activity>
+
     </application>
 
 </manifest>
